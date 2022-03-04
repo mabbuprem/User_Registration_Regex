@@ -11,11 +11,13 @@ namespace User_Registration_Regex_Unit_Testing
         {
             UserRegistrationPattern userRegistrationPattern = new UserRegistrationPattern();
             string[] checkingFirstNames = { "Prem",  "Prem" };
-            string[] checkingLastNames = { "Kumar",  "Kumar" };
+            string[] checkingLastNames = { "Kumar", "Kumar" };
             string[] checkingEMails = { "abc@bl.co", "abc.xyz@bl.co", "abc.xyz@bl.co.in", "abc.@bl.co" };
+            string[] checkingNo = { "91 7981587635", "917730002849", "910720659414", "9172065941491" };
             userRegistrationPattern.ValidateFirstName(checkingFirstNames);
             userRegistrationPattern.ValidatelastName(checkingLastNames);
             userRegistrationPattern.ValidateeMail(checkingEMails);
+            userRegistrationPattern.ValidateMobileNo(checkingNo);
         }
     }
 }
