@@ -10,8 +10,10 @@ namespace User_Registration_Regex_Unit_Testing
         static void Main(string[] args)
         {
             UserRegistrationPattern userRegistrationPattern = new UserRegistrationPattern();
-            string[] checkingFirstNames = { "Prem", "Pop", "Ho", "Prem" };
+            string[] checkingFirstNames = { "Prem",  "Prem" };
+            string[] checkingLastNames = { "Kumar", "Kumar" };
             userRegistrationPattern.ValidateFirstName(checkingFirstNames);
+            userRegistrationPattern.ValidatelastName(checkingLastNames);
         }
     }
 }
